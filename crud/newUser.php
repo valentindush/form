@@ -77,7 +77,8 @@
 
                                 }else{
                                     header("Location: form.php");
-                                    $_SESSION['err_s'] = "Only file with .jpg, png gif and jpeg extensions are allowed";
+                                    $_SESSION['err_s'] = "Only files with .jpg, png gif and jpeg extensions are allowed";
+                                    exit;
 
                                 }
                             }else{

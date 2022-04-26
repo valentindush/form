@@ -139,7 +139,7 @@
                 while($row = mysqli_fetch_assoc($userQuery)){
                     ?>
 
-                            <form action="update.php" method="post">
+                            <form action="update.php" method="post" enctype="multipart/form-data">
                             <div class="header">Update User</div>
 
                             <div class="field name">
@@ -179,6 +179,11 @@
                             <div class="field username">
                             
                                 <input type="text" placeholder="Enter your username" name="username" value=<?php echo $row['username']; ?>>
+                            </div>
+
+                            <div class="field file">
+                                <span>Change Prifile picture</span>
+                                <input type="file" name="image">
                             </div>
                             
                             <div class="err"><?php echo $db_error . $err_s; ?></div>

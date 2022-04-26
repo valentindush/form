@@ -24,6 +24,7 @@
 
         <div class="users">
             <div class="user">
+                <div class="i">Picture</div>
                 <div class="i fname">First Name</div>
                 <div class="i lname">Last Name</div>
                 <div class="i phone">Telphone</div>
@@ -48,6 +49,7 @@
                     ?>
 
                     <div class="user">
+                        <div class="i img"><img src=<?php echo "uploads/".$row['picture']  ?> /></div>
                         <div class="i fname"><?php echo $row['firstname'] ?></div>
                         <div class="i lname"><?php echo $row['lastname'] ?></div>
                         <div class="i phone"><?php echo $row['telephone'] ?></div>
