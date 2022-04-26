@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+.container{
+    width: fit-content;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    margin: auto;
+    padding: 1em;
+    padding-top: 2em;
+    margin-top: 2em;
+    height: 70vh;
+    position: relative;
+
+}
+
+.title h3{
+    text-align: center;
+}
+
+.users{
+    overflow: auto;
+    height: 95%;
+}
+
+.user {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    padding: .5em;
+}
+.user:nth-child(odd){
+    background-color: rgb(220, 218, 218);
+}
+.user:first-child{
+    background: #bb2d74;
+    color: #fff;
+}
+.user .i{
+    font-weight: 500;
+    font-size: .8em;
+    width: 6em;
+    max-width: 6em;
+    word-wrap: break-word;
+
+}
+
+.user .email{
+    width: 14em;
+    max-width: 14em;
+}
+/* 
+.user .phone{
+    width: 8em;
+    max-width: 8em;
+} */
+
+.user .edit{
+    width:8em;
+    max-width: 12em;
+}
+
+.user a{
+    background-color: #bb2d74;
+    color: #fff;
+    padding: .3em 1em;
+    transition: .3s ease-in;
+    border-radius: .3em;
+}
+.user a:hover{
+    filter: brightness(75%);
+}
+.user a:last-child{
+    background-color: #f80a16;
+}
+
+.new{
+    width: fit-content;
+    margin-top: 2em;
+}
+
+.new a{
+    background: #bb2d74;
+    padding: .5em 1em;
+    color: #fff;
+    border-radius: .4em;
+    text-decoration: none;
+}
+
+.search form{
+    display: flex;
+    gap: .2em;
+    padding: 1em 0;
+    justify-content: center;
+}
+
+.search input[type="text"]{
+    width: 50%;
+    height: 30px;
+    padding: 0 1em;
+    border: 1px solid #888;
+    outline: none;
+    border-radius: .7em 0 0 .7em;
+}
+.search input[type="text"]:hover{
+    border: 2px solid #bb2d74;
+}
+.search input[type="text"]:focus{
+    border: 2px solid #bb2d74;
+}
+
+.search input[type="submit"]{
+    padding: 0 1em;
+    background: #bb2d74;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: .3s ease-in;
+    border-radius: 0 .7em .7em 0;
+}
+.search input[type="submit"]:hover{
+    filter: brightness(80%);
+}
+
